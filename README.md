@@ -8,16 +8,55 @@
 ![Java Code Generation](https://img.shields.io/badge/direct%20Java%20generation-disabled-lightgrey)
 
 ---
+## For recruiters
+
+This project demonstrates my current focus as a QA Automation Engineer / SDET:
+
+- Java-based UI/API automation architecture
+- Selenium UI discovery and locator quality thinking
+- Requirement-driven test design
+- AI-assisted QA workflows with deterministic safety boundaries
+- Traceable and reviewable automation artifacts
+
+The full implementation is private, but selected sanitized artifacts are available on request.
+
+## For technical interviewers
+
+The most relevant technical areas are:
+
+- mapper layer design
+- prompt-safe context slicing
+- deterministic locator confidence without LLMs
+- assertion contracts
+- graph/vector knowledge experiments
+- planned API coverage mapping with OpenAPI and RestAssured
+
 
 ## What is this?
 
-This repository is a **README-only public showcase** for a private R&D project.
+## Repository contents
 
-The goal of the platform is to explore how QA automation can become more traceable and safer when requirements, UI discovery, API contracts, locator quality, assertions, and AI-assisted enrichment are handled as structured knowledge instead of one large prompt.
+This showcase repository currently contains a public architecture overview.
 
-The full source code is currently private. Selected architecture notes and sanitized artifacts can be shared on request.
+Planned public artifacts:
+
+- `samples/requirements/` — sanitized requirement examples
+- `samples/page-model/` — sample PageModel JSON
+- `samples/mapped-knowledge/` — sample mapped UI knowledge
+- `samples/prompts/` — generated Page Object prompt examples
+- `samples/quality/` — run quality summary examples
+- `docs/` — architecture notes and diagrams
 
 ---
+
+## What this is not
+
+- Not a codeless test automation tool
+- Not a production SaaS product
+- Not a fully autonomous AI test generator
+- Not a replacement for Selenium, RestAssured, k6, or JMeter
+
+The project is an R&D platform for exploring safer, traceable, AI-assisted QA automation workflows.
 
 ## Why I built it
 
@@ -87,15 +126,15 @@ flowchart TD
 
 ## Main capabilities
 
-### Requirement-driven test design
-
-The platform starts from requirement documents and converts them into structured test knowledge:
-
-- normalized requirements;
-- canonical test cases;
-- expected-result candidates;
-- unresolved expected results for manual review;
-- requirement-to-page and requirement-to-assertion traceability.
+| Capability | Purpose |
+|---|---|
+| Requirement normalization | Converts requirement text into structured test knowledge |
+| Selenium UI discovery | Extracts pages, elements, forms, actions, transitions, and locator candidates |
+| PageModel mapping | Converts raw UI evidence into mapped page/action/assertion knowledge |
+| Locator quality gates | Scores and filters locator candidates before promotion |
+| Prompt-safe context | Prevents irrelevant page evidence from leaking into prompts |
+| AI enrichment | Uses AI only for enrichment and reviewable specification support |
+| Quality artifacts | Produces prompt files, scope traces, expected-result reports, and quality summaries |
 
 ### Selenium UI discovery
 
@@ -275,6 +314,15 @@ Available on request:
 - sample Page Object prompt;
 - sample scope trace;
 - sample run quality summary.
+
+  ## Current status
+
+- Full source code: private
+- Public repository type: README-only showcase
+- Active implementation: Java 17 / Maven / Selenium / TestNG
+- AI mode: enrichment and prompt preparation only
+- Direct Java generation: disabled
+- Next public milestone: sanitized sample artifacts
 
 ---
 
