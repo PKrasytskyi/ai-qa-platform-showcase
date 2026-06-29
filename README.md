@@ -31,6 +31,12 @@ The most relevant technical areas are:
 - graph/vector knowledge experiments
 - planned API coverage mapping with OpenAPI and RestAssured
 
+## What is this?
+
+This is a public showcase repository for a private AI-assisted QA automation R&D project.
+It explains the architecture, safety boundaries, current focus, and planned public artifacts.
+The goal is to demonstrate QA automation architecture and AI-assisted testing thinking without exposing private source code.
+
 ## Repository contents
 
 This showcase repository currently contains a public architecture overview.
@@ -45,12 +51,6 @@ Planned public artifacts:
 - `docs/` — architecture notes and diagrams
 
 ---
-
-## What is this?
-
-This is a public showcase repository for a private AI-assisted QA automation R&D project.
-It explains the architecture, safety boundaries, current focus, and planned public artifacts.
-The goal is to demonstrate QA automation architecture and AI-assisted testing thinking without exposing private source code.
 
 ## What this is not
 
